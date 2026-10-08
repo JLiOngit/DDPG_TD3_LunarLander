@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Training logs (tensorboard): too large for GitHub, results.json are kept
+**/events.out.tfevents.*
+*.tmp
+# Runs of the previous bias protocol
+archive/

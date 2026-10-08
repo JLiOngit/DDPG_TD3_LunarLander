@@ -1,0 +1,65 @@
+{
+ "name": "td3/utd_ratio=4/S5",
+ "config": {
+  "env_name": "LunarLanderContinuous-v3",
+  "seed": 5,
+  "max_steps": 300000,
+  "n_envs": 1,
+  "steps_per_update": 1,
+  "learning_starts": 1000,
+  "buffer_size": 300000,
+  "batch_size": 128,
+  "gamma": 0.99,
+  "tau": 0.005,
+  "action_noise": 0.1,
+  "actor_hidden": [
+   256,
+   256
+  ],
+  "critic_hidden": [
+   256,
+   256
+  ],
+  "layer_norm": false,
+  "lr_actor": 0.0001,
+  "lr_critic": 0.001,
+  "eval_interval": 10000,
+  "n_eval_envs": 10,
+  "mc_horizon": 300,
+  "utd_ratio": 4,
+  "policy_delay": 2,
+  "target_noise": 0.2,
+  "target_noise_clip": 0.5
+ },
+ "done": false,
+ "evals": [
+  {
+   "step": 10000,
+   "rewards": [
+    -373.7921447753906,
+    -717.4824829101562,
+    -128.6596221923828,
+    -122.54859924316406,
+    -106.34709930419922,
+    -137.40675354003906,
+    -253.34033203125,
+    -315.34564208984375,
+    -51.033966064453125,
+    -561.344482421875
+   ]
+  }
+ ],
+ "bias": [
+  {
+   "step": 10000,
+   "episode_length": 240.39999389648438,
+   "landed": 0.0,
+   "crashed": 1.0,
+   "truncated": 0.0,
+   "bias": 37.209354400634766,
+   "normalized_bias": 0.3504060208797455,
+   "q": -68.92750549316406,
+   "mc_return": -106.13685607910156
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+[project]
+name = "tp-rl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JLiOngit", email = "johnny.pro.1411@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gymnasium==1.2.*",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "rl-mind==0.3.*",
+    "scipy>=1.18.1",
+    "setuptools>=84.0.0",
+    "swig==4.3.*",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+tp-rl = "tp_rl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
